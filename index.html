@@ -1794,7 +1794,7 @@ function renderTest() {
     div.className = 'test-card';
     div.id = 'tc-' + idx;
     div.innerHTML = `
-      <div class="test-area-badge" style="background:${p.areaBg};color:${p.areaColor};">${p.area}</div>
+      <div class="test-area-badge" style="background:${p.areaBg};color:${p.areaColor};">${p.area.split(' \u2014 ')[0]}</div>
       <div class="test-enunciado">${p.enunciado}</div>
       <div class="test-pregunta">${p.pregunta}</div>
       <div class="test-opciones" id="tops-${idx}">
